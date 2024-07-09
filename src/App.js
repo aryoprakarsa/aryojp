@@ -1,22 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import constructionImage from './construction.png'; // add your construction image to src folder
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>We're Under Construction</h1>
+        <p>Our site is currently under construction. Please check back soon!</p>
+        <img src={constructionImage} alt="Under Construction" className="construction-image" />
       </header>
     </div>
   );
