@@ -11,3 +11,18 @@
 .App-header {
   text-align: center;
 }
+
+.external-link {
+  color: white;
+  text-decoration: underline !important;
+}
+
+.external-link:hover {
+  text-decoration: none;
+}
+
+.external-link:active,
+.external-link:link {
+  color: white;
+  text-decoration: none;
+}
