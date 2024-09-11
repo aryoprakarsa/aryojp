@@ -1,22 +1,20 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './UnderConstruction.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Under Construction</h1>
-        <p>
-          My site is currently under construction. Please check back soon! In
-          the meantime, interested in cool stuff? Check out my{" "}
-          <a className="external-link" href="https://speedtest.aryo.ai/">
-            speedtest
-          </a>
-          .
-        </p>
-      </header>
+    <div className="under-construction">
+      <h1 className="aryo-text">Aryo</h1>
+      <div className="content">
+        <h2>Under Construction</h2>
+        <p>We're working hard to bring you something amazing. Please check back soon!</p>
+        <div className="progress-bar">
+          <div className="progress"></div>
+        </div>
+        <p>In the meantime, check out my <a href="https://speedtest.aryo.ai/" target="_blank" rel="noopener noreferrer">speedtest</a>.</p>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
