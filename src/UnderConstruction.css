@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.under-construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.aryo-text {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 8rem;
+    line-height: 1;
+    margin-bottom: 2vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5vh 5vw;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2vh;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2vh;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2vh;
+}
+
+.progress {
+    width: 75%;
+    height: 100%;
+    background-color: #4CAF50;
+    animation: progressAnimation 2s ease-in-out infinite;
+}
+
+@keyframes progressAnimation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFA500;
+}
+
+@media (max-width: 768px),
+(max-height: 600px) {
+    .aryo-text {
+        font-size: 15vw;
+        margin-bottom: 3vh;
+    }
+
+    .content {
+        padding: 4vh 4vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+        margin-bottom: 2vh;
+    }
+
+    p {
+        font-size: 4vw;
+        margin-bottom: 2vh;
+    }
+
+    .progress-bar {
+        margin-bottom: 2vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .aryo-text {
+        font-size: 18vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    p {
+        font-size: 4.5vw;
+    }
+}
