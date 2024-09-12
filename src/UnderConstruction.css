@@ -5,40 +5,41 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden;
-    /* Prevent any horizontal scrolling */
+    overflow: hidden;
+    /* Prevent scrolling */
 }
 
 .under-construction {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* Centers content vertically */
     align-items: center;
+    /* Centers content horizontally */
     height: 100vh;
-    /* Ensure it takes the full viewport height */
+    /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    /* Prevent any content overflow */
 }
 
 .content {
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     margin-bottom: 0;
-    /* Ensure no margin at the bottom */
 }
 
 .aryo-text {
     font-family: 'Protest Guerrilla', sans-serif;
     font-size: clamp(3rem, 15vw, 8rem);
+    /* Responsive font size */
     line-height: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.content {
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .max-width-md {
@@ -56,8 +57,9 @@ a:hover {
     color: #FFA500;
 }
 
+/* For smaller screens, adjust font size */
 @media (max-width: 576px) {
     .aryo-text {
-        font-size: clamp(2.5rem, 18vw, 5rem);
+        font-size: clamp(3rem, 15vw, 8rem);
     }
 }
